@@ -3,7 +3,7 @@ import os.path as path
 import string
 from typing import List
 
-from helper import Helper
+from EasyMLLib.helper import Helper
 
 OUTPUT_FOLDER_PATH = path.join("Outputs", "Output")
 

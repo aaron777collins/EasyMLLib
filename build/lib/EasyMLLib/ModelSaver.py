@@ -3,7 +3,7 @@ import os
 
 from sklearn.ensemble import StackingClassifier
 
-from helper import Helper
+from EasyMLLib.helper import Helper
 
 MODEL_FILE_PATH = "Models"
 

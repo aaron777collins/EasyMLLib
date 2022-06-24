@@ -6,7 +6,7 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-from helper import Helper
+from EasyMLLib.helper import Helper
 
 OUTPUT_FOLDER_PATH = path.join("Outputs", "Output")
 

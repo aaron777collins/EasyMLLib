@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.3' 
+VERSION = '0.1.0' 
 DESCRIPTION = 'EasyMLLIB'
 LONG_DESCRIPTION = 'EasyMLLIB - A library to make machine learning easier'
 
