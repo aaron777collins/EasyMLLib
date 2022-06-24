@@ -7,7 +7,7 @@ LONG_DESCRIPTION = 'Easy_ML - A library to make machine learning easier'
 # Setting up
 setup(
        # the name must match the folder name 'verysimplemodule'
-        name="Easy_ML", 
+        name="EasyML", 
         version=VERSION,
         author="Aaron Collins",
         author_email="aaron777collins@gmail.com",

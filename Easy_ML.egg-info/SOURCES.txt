@@ -1,0 +1,11 @@
+README.md
+setup.py
+Easy_ML.egg-info/PKG-INFO
+Easy_ML.egg-info/SOURCES.txt
+Easy_ML.egg-info/dependency_links.txt
+Easy_ML.egg-info/requires.txt
+Easy_ML.egg-info/top_level.txt
+TestScripts/__init__.py
+TestScripts/useful/__init__.py
+TestScripts/useful/testFeatures.py
+TestScripts/useful/testModels.py

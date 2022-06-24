@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Easy-ML
+Version: 0.0.1
+Summary: Easy_ML
+Home-page: UNKNOWN
+Author: Aaron Collins
+Author-email: aaron777collins@gmail.com
+License: UNKNOWN
+Keywords: python,Easy_ML,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+
+Easy_ML - A library to make machine learning easier
+
