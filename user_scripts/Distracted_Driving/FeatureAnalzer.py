@@ -1,3 +1,4 @@
+import ImportParentFiles
 from datetime import datetime
 import os.path as path
 from typing import Tuple
@@ -5,9 +6,9 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
-from cleanData import DataCleaner
+from DataCleaner import DataCleaner
 from sklearn.ensemble import RandomForestClassifier, StackingClassifier
 from matplotlib import pyplot as plt
 from logger import Logger
@@ -24,17 +25,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.gaussian_process.kernels import RBF
 from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier, StackingClassifier
 
-
 from DataSplitter import DataSplitter
 
-# Not used
-DIB_NAME = "DIB1"
-DATASETS_PATH = path.join(DIB_NAME, 'dataRaw', 'ID')
-SELECTED_DATA_SET_PATH = path.join("Single", "ET")
-CONCAT_FILE_PATH = DIB_NAME
-CONCAT_FILE_NAME = "concat-data"
-CONCAT_FILE_EXT = ".csv"
-CONCAT_FULLPATH_WITHOUT_EXT = path.join(CONCAT_FILE_PATH, CONCAT_FILE_NAME)
+ImportParentFiles.dummyFunc()
 
 CSV_COLUMNS = ["Model"]
 
@@ -185,14 +178,13 @@ class FeatureAnalzer:
                 row = [" "] * len(CSV_COLUMNS)
                 row[CSV_FORMAT["Model"]] = classifierNames[i]
 
-
                 # Summarize feature importance
                 for featureIndex, score in enumerate(importance):
                     self.logger.log('Feature: %s, Score: %.5f' % (
                         features.columns.values[featureIndex], score))
                     row[CSV_FORMAT[features.columns.values[featureIndex]]] = score
-                
-                # Add current row 
+
+                # Add current row
                 self.csvWriter.addRow(row)
 
                 # # plot feature importance
@@ -202,6 +194,7 @@ class FeatureAnalzer:
                 # ax.set_xticks([x for x in range(len(importance))])
                 # ax.set_xticklabels(labels=features.columns.values)
                 # #plt.show()
+                # Helper().createPath("Figures")
                 # plt.savefig(path.join("Figures", "feature-test-"+ datetime.now().strftime(R"%m-%d-%Y, %H-%M-%S") + ".png"), format='png', dpi=200)
 
     def buildModel(self, features: pd.DataFrame, answers: pd.DataFrame, classifier: StackingClassifier):

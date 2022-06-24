@@ -3,21 +3,18 @@ import os
 
 from sklearn.ensemble import StackingClassifier
 
-from helper import Helper
-
-MODEL_FILE_PATH = "Models"
+MODEL_FILE_PATH = os.path.join("Models")
 
 from typing import TypeVar, Generic
 
 T = TypeVar('T')
 
-class ModelSaver(Generic[T]):
+class ModelSaverOld(Generic[T]):
 
     # Saves the model to a pickle file
     # model: The model to save
     # name: the name to save it as
     def saveModel(self, model, name):
-        Helper().createPath(MODEL_FILE_PATH)
         with open(os.path.join(MODEL_FILE_PATH, name), "wb") as file:
             pickle.dump(model, file)
             

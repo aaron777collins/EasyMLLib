@@ -5,9 +5,9 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
-from cleanData import DataCleaner
+from DataCleaner import DataCleaner
 from sklearn.ensemble import RandomForestClassifier
 from matplotlib import pyplot as plt
 

@@ -20,9 +20,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
-from cleanData import DataCleaner
+from DataCleaner import DataCleaner
 from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier, StackingClassifier
 from matplotlib import pyplot as plt
 
@@ -71,7 +71,7 @@ CSV_FORMAT = {CSV_COLUMNS[i]: i for i in range(len(CSV_COLUMNS))}
 OVERWRITE_MODEL = True
 
 
-class ModelTrainer:
+class ModelTrainerOld:
     def main(self):
 
         # id = "concat"
@@ -335,4 +335,4 @@ class ModelTrainer:
 
 
 if __name__ == "__main__":
-    ModelTrainer().main()
+    ModelTrainerOld().main()

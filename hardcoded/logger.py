@@ -6,17 +6,20 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-from helper import Helper
-
+DIB_NAME = "DIB1"
+DATASETS_PATH = path.join(DIB_NAME, 'dataRaw', 'ID')
+SELECTED_DATA_SET_PATH = path.join("Single", "ET")
+CONCAT_FILE_PATH = DIB_NAME
+CONCAT_FILE_NAME = "concat-data"
+CONCAT_FILE_EXT = ".csv"
+CONCAT_FULLPATH_WITHOUT_EXT = path.join(CONCAT_FILE_PATH, CONCAT_FILE_NAME)
 OUTPUT_FOLDER_PATH = path.join("Outputs", "Output")
 
-class Logger:
+class LoggerOld:
     def __init__(self, name: string):
         self.name = name
-        Helper().createPath(OUTPUT_FOLDER_PATH)
         timeLog = datetime.now().strftime(r'%Y-%m-%d_%H-%M-%S')
         self.log("### "+ timeLog + " ###")
-
         
         
     def log(self, *args):

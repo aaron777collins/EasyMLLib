@@ -19,7 +19,7 @@ MAX_ID = 28
 
 from helper import Helper
 
-class DataGatherer:
+class DataGathererOld:
 
     def main(self):
         # data: pd.DataFrame = self.gatherData(1)
@@ -68,4 +68,4 @@ class DataGatherer:
             
 
 if __name__ == "__main__":
-    DataGatherer().main()
+    DataGathererOld().main()

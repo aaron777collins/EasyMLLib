@@ -16,9 +16,9 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.gaussian_process.kernels import RBF
 
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
-from cleanData import DataCleaner
+from DataCleaner import DataCleaner
 from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier, StackingClassifier
 from matplotlib import pyplot as plt
 
@@ -29,7 +29,7 @@ from CSVWriter import CSVWriter, OUTPUT_FOLDER_PATH
 
 GEN_NAME = "features-nobk-macro"
 
-class CSVConcat:
+class CSVConcatOld:
     def main(self):
                 
         # id = "concat"
@@ -63,4 +63,4 @@ class CSVConcat:
         
 
 if __name__ == "__main__":
-    CSVConcat().main()
+    CSVConcatOld().main()

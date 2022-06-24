@@ -16,9 +16,9 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.gaussian_process.kernels import RBF
 
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
-from cleanData import DataCleaner
+from DataCleaner import DataCleaner
 from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
 from matplotlib import pyplot as plt
 

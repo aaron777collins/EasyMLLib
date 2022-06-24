@@ -3,7 +3,7 @@ import os.path as path
 import numpy as np
 import pandas as pd
 
-from gatherData import DataGatherer
+from DataGatherer import DataGatherer
 from helper import Helper
 
 DIB_NAME = "DIB1"
@@ -14,7 +14,7 @@ CONCAT_FILE_NAME = "concat-data"
 CONCAT_FILE_EXT = ".csv"
 CONCAT_FULLPATH_WITHOUT_EXT = path.join(CONCAT_FILE_PATH, CONCAT_FILE_NAME)
 
-class DataCleaner:
+class DataCleanerOld:
 
     def main(self):
         data: pd.DataFrame = self.getCleanData(10, overwrite=True)
@@ -148,4 +148,4 @@ class DataCleaner:
         
 
 if __name__ == "__main__":
-    DataCleaner().main()
+    DataCleanerOld().main()
