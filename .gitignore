@@ -1,0 +1,11 @@
+*.dfs
+Logging/*.txt
+Logging/Logs/*.txt
+__pycache__
+__pycache__/*
+Models/*.model
+Outputs/Output/*
+DIB1/concat-data-concat*.csv
+Models/*.model
+Figures/*
+data/*
