@@ -17,8 +17,6 @@ CLASSIFIERS = [0, 1, 2]
 MIN_ID = 1
 MAX_ID = 28
 
-from helper import Helper
-
 class DataGatherer:
         
     def gatherDataFromFile(self, pathStr, concatFunc=None, concatArgs=[]) -> pd.DataFrame:
