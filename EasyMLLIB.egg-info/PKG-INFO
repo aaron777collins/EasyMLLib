@@ -1,13 +1,10 @@
 Metadata-Version: 2.1
 Name: EasyMLLIB
-Version: 0.1.0
+Version: 0.1.1
 Summary: EasyMLLIB
-Home-page: UNKNOWN
 Author: Aaron Collins
 Author-email: aaron777collins@gmail.com
-License: UNKNOWN
 Keywords: python,EasyMLLIB,Machine Learning
-Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Science/Research
 Classifier: Programming Language :: Python :: 3
@@ -16,4 +13,3 @@ Classifier: Operating System :: Microsoft :: Windows
 Classifier: Operating System :: Unix
 
 EasyMLLIB - A library to make machine learning easier
-
